@@ -89,11 +89,10 @@ void pop(Node*&head){
 int main(){
     //Initialising an empty linked list
     Node*head=NULL;
-	int no_of_family_mem;
-    //Taking no of family mem as input
-	cout<<"Enter Number Of Family Members:";cin>>no_of_family_mem;
+	int fam_no;
+	cout<<"Enter Number Of Family Members:";cin>>fam_no;
     //Inserting family members details in doubly linked list
-	for(int i=1;i<=no_of_family_mem;i++){
+	for(int i=1;i<=fam_no;i++){
 		string name;
 		int age;
 		cout<<"Enter Family Member "<<i<<" Name:";cin.ignore();getline(cin,name);
